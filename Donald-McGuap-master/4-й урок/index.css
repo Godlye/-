@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-1 {
+    border: 10px solid silver;
+}
+.item-2 {
+    border: 10px solid silver;   
+}
+.item-3 {
+    border: 10px solid silver;
+}
+.item-4 {
+    border: 10px solid silver;
+}
+.item-5 {
+    border: 10px solid silver;
+}
+.item-6 {
+    border: 10px solid silver;
+}
+.item-7 {
+    border: 10px solid silver;
+}

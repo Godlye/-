@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loading</title>
+    <script>
+        var progress = 0;
+        function interval() {
+            progress++;
+            document.getElementById('span').innerHTML = progress + "%";
+            document.getElementById('span').style = "margin-left:" + progress + "%;";
+            document.getElementById('green').style = "width:" + progress + "%;";
+        }
+        var timerId = setInterval(interval, 50);
+        setTimeout(function () {
+            clearInterval(timerId);
+        }, 100 * 50);
+    </script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #major {
+            width: 860px;
+            height: 640px;
+            border: 5px solid black;
+            margin: 0 auto;
+            border-radius: 45px;
+            background-color:peru;
+        }
+        #red {
+            width: 430px;
+            height: 20px;
+            background-color: aqua;
+            margin-left: 215px;
+            margin-right: 215px;
+            border-radius: 15px;
+            border: solid black 5px;
+        }
+        #spanBlock {
+            margin-top: 320px;
+            margin-left: 205px;
+            margin-right: 235px;
+            
+        }
+        #green {
+            height: 20px;
+            width: 0;
+            border-radius: 10px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="major">
+        <div id="spanBlock">
+            <span id="span">0%</span>
+        </div>
+        <div id="red">
+            <div id="green"></div>
+        </div>
+    </div>
+</body>
+
+</html>

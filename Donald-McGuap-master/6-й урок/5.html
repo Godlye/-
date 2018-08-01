@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О лосях</title>
+    <script>
+        function go() {
+            var ol = document.getElementsByTagName('ol')[0];
+            var hiter = ol.removeChild(ol.firstChild);
+            var kovaren = ol.removeChild(ol.firstChild);
+            ol.appendChild(kovaren);
+            ol.appendChild(hiter);
+        }
+        window.onload = function() {
+            Document.body.onclick = go
+        }
+    </script>
+</head>
+<body>
+    Правда о лосях.
+    <ol>
+        <li>
+            Лось - животрое хитрое
+        </li>
+        <li>
+            ... И коварное
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body onclick="alert('Элемент BODY');">
+    <h2>Демонстрация всплывая событий</h2>
+
+    <BODY>
+        <div onclick="alert('Внешний блок DIV');" style="border-style: solid; width: 330; height: 150">
+            DIV
+            <div onclick="alert('Внутренний блок DIV');" style="border-style: solid; width: 200; height: 100">
+                DIV
+                <br>
+                <span onclick="alert('Элемент SPAN - низжний уровень');" style="border-style: solid; width: 80; height: 50">
+                    SPAN
+                </span>
+            </div>
+        </div>
+    </BODY>
+</body>
+
+</html>

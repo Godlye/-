@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding:0;
+}
+#main{
+    width: 860px;
+    height: 640px;
+    border: 2px solid red;
+    margin: 0 auto;
+    background: rgb(245, 232, 212);
+}
+#mainProg{
+    width: 50%;
+    height: 20px;
+    border: 2px solid black;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+#mainPer{
+    width: 50%;
+    margin-top: 270px;
+    margin-left: 25%;
+}
+#prog{
+    height: 20px;
+    border-radius: 10px;
+    background: rgb(119, 53, 182);
+}
